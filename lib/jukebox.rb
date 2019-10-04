@@ -56,9 +56,7 @@ end
 def run
   puts "Please enter a command:"
   user_input = gets.strip
-  until user_input == 'exit'
-    run
-  end
+  while user_input != exit
     case user_input
       when 'help'
         help
@@ -69,4 +67,5 @@ def run
       when 'exit'
         exit_jukebox
     end
+  end
 end
