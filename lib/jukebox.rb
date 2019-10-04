@@ -43,6 +43,8 @@ def play(songs)
   end
 end
 
+play("Phoenix - 1901")
+
 def list(music)
   music.each_with_index do |music,idx|
     puts "#{idx+1}. #{music}"
