@@ -57,7 +57,7 @@ def run
   puts "Please enter a command:"
   user_input = gets.strip
   if user_input == 'exit'
-      exit
+      exit_jukebox
   end
   until user_input != 'exit' do 
     if user_input == 'help'
