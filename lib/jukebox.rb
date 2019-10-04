@@ -36,7 +36,7 @@ def play(songs)
 	elsif songs.include?(user_response)
 		puts songs.find {|music| music == user_response}
 	else
-		puts "Not valid"
+		puts "Invalid input, please try again"
 	end
   
 end
