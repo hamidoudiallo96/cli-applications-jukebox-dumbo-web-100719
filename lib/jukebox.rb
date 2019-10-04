@@ -56,7 +56,7 @@ end
 def run
   puts "Please enter a command:"
   user_input = gets.strip
-  while !(user_input == exit)
+  while user_input != exit
     case user_input
       when 'help'
         help
@@ -64,8 +64,9 @@ def run
         play(songs)
       when 'list'
         list(songs)
-      when 'exit'
-        exit_jukebox
     end
+  end
+  if user_input == 'exit'
+    exit_jukebox
   end
 end
