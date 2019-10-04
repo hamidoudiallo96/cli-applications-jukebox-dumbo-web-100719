@@ -61,6 +61,7 @@ def run
   end
   until user_input != 'exit' do 
     case user_input
-      when 
+      when 'help'
+        
   end
 end
