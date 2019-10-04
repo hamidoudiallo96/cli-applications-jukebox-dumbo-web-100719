@@ -35,6 +35,7 @@ def play(songs)
     if user_response.to_s == music 
       puts ""
       p music
+      puts ""
       p user_response
       puts ""
     elsif user_response.to_i == (songs.index(music)+1)
