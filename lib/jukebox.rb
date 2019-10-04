@@ -60,6 +60,7 @@ def run
       exit_jukebox
   end
   until user_input != 'exit' do 
-    
+    case user_input
+      when 
   end
 end
