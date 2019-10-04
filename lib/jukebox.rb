@@ -56,7 +56,7 @@ end
 def run
   puts "Please enter a command:"
   user_input = gets.strip
-  until user_input != 'exit'
+  until user_input == 'exit'
     run
   end
     case user_input
