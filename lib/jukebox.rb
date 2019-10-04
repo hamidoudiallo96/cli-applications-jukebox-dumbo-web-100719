@@ -34,7 +34,7 @@ def play(songs)
   songs.each do |music|
     if user_response.to_s == music 
       puts music
-    elsif user_response >= 1 &&user_response.to_i == (songs.index(music)+1)
+    elsif user_response >= 1 && user_response <
       puts "Playing #{music}"
     else
       puts "Invalid input, please try again"
