@@ -33,7 +33,7 @@ def play(songs)
   user_response = gets.strip
   songs.any? do |music|
     if user_response.to_s == music 
-      puts music
+      puts "Playing #{songs}"
     elsif user_response >= 1 && user_response <= songs.length
       puts "Playing #{songs[user_response-1]}"
     else
