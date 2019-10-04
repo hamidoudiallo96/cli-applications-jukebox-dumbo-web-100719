@@ -64,7 +64,8 @@ def run
         play(songs)
       when 'list'
         list(songs)
-      
+      else
+        run
     end
   end
   if user_input == 'exit'
