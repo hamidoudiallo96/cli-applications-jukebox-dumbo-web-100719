@@ -53,7 +53,7 @@ def exit_jukebox
   puts "Goodbye"
 end
 
-def run
+def run(songs)
   puts "Please enter a command:"
   user_input = gets.strip
   while !!(user_input == exit)
@@ -65,7 +65,7 @@ def run
       when 'list'
         list(songs)
       else
-        run
+        run(songs)
     end
   end
   if user_input == 'exit'
