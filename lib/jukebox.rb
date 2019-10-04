@@ -36,7 +36,7 @@ def play(songs)
       p music
       puts "Playing #{user_response}"
     elsif user_response.to_i == (songs.index(music)+1)
-      puts "Playing #{user_response}"
+      puts "Playing #{music}"
     else
       puts "Invalid input, please try again"
     end
