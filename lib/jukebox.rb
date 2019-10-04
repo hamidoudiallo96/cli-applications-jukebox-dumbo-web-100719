@@ -34,7 +34,7 @@ def play(songs)
   songs.any? do |music|
     if user_response == music 
       p music
-      puts "Playing #{user_response}"
+      puts "Playing #{music}"
     elsif user_response.to_i == (songs.index(music)+1)
       puts "Playing #{music}"
     else
