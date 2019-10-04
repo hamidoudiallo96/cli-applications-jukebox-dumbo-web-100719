@@ -59,7 +59,7 @@ def run
   if user_input == 'exit'
       exit_jukebox
   end
-  until user_input != 'exit' do 
+  while user_input != 'exit' do 
     case user_input
       when 'help'
         help
