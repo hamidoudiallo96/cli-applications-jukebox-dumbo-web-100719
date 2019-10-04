@@ -54,4 +54,11 @@ def exit_jukebox
 end
 
 def run
+  puts "Please enter a command:"
+  user_input = gets.strip
+  until user_input != 'exit' do 
+    if user_input == 'help'
+      puts help
+    elsif
+  end
 end
