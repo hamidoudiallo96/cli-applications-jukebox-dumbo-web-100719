@@ -59,8 +59,6 @@ def run
   until user_input != 'exit'
     run
   end
-  
-  while user_input != 'exit' do 
     case user_input
       when 'help'
         help
@@ -68,6 +66,5 @@ def run
         play(songs)
       when 'list'
         list(songs)
-  end
-  
+    end
 end
