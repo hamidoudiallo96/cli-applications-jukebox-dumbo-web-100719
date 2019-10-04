@@ -29,17 +29,16 @@ def help
 end
 
 def play(songs)
-  puts "Please enter a song name or number:"
-  user_response = gets.strip
-  songs.any? do |music|
-    if user_response == music 
-      puts "Playing #{user_response}"
-    elsif user_response >= 1 && user_response <= songs.length
-      puts "Playing #{songs[user_response-1]}"
-    else
-      puts "Invalid input, please try again"
-    end
-  end
+	puts "Please enter a song name or number:"
+	user_response = gets.strip
+	if user_response.to_i >= 1 && user_response.to_i <= songs.length
+		puts "Playing #{songs[user_response.to_i-1]}"
+	elsif songs.include?(user_response)
+		puts songs.find {|music| music == user_response}
+	else
+		puts "Not valid"
+	end
+  
 end
 
 
