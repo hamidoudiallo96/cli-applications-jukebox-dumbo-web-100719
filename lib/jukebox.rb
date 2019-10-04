@@ -60,11 +60,6 @@ def run
       exit_jukebox
   end
   until user_input != 'exit' do 
-    if user_input == 'help'
-      help
-    elsif user_input == 'play'
-      play(songs)
-    elsif user_input == 'list'
-      list(songs)
-    end
+    
+  end
 end
